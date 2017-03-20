@@ -110,7 +110,7 @@ public class TestB {
 		String strPageTitle = driver.getTitle();
 		Assert.assertTrue(strPageTitle.equalsIgnoreCase("Google"), "Page title doesn't match");
 		*/
-		driver.navigate().to("http://172.18.51.87:80/devcapsule-spring-1.0/");
+		driver.navigate().to("http://172.18.51.87:82/devcapsule-spring-1.0/");
 		//driver.get("http://172.18.51.88:8080/devcapsule-spring-1.0/");
 		String strPageTitle = driver.getTitle();
 		Assert.assertFalse(strPageTitle.equalsIgnoreCase("Pizzas"), "");
@@ -124,7 +124,7 @@ public class TestB {
 		String strPageTitle = driver.getTitle();
 		Assert.assertTrue(strPageTitle.equalsIgnoreCase("Google"), "Page title doesn't match");
 		*/
-		driver.navigate().to("http://172.18.51.87:80/devcapsule-spring-1.0/");
+		driver.navigate().to("http://172.18.51.87:82/devcapsule-spring-1.0/");
 		//driver.get("http://172.18.51.88:8080/devcapsule-spring-1.0/");
 		String strPageTitle = driver.getTitle();
 		Assert.assertFalse(strPageTitle.equalsIgnoreCase("Pizzas1"), "");
@@ -136,7 +136,7 @@ public class TestB {
 		
 		ExtentTest test= extentreport.startTest(Thread.currentThread().getStackTrace()[1].getMethodName());
 		
-		driver.get("http://172.18.51.87:80/devcapsule-spring-1.0/");
+		driver.get("http://172.18.51.87:82/devcapsule-spring-1.0/");
 		getscreenshot("Homepage");
 		flushReport(test,LogStatus.PASS, "Website URL", "http://172.18.51.87:80/devcapsule-spring-1.0/", "<div align='right' style='float:right' class='imagesrc'><a href=" + "./../Images/Homepage.png" + ">Screenshot</a></div>");
 		// Add Base
